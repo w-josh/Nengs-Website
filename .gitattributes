@@ -1,0 +1,23 @@
+*text=auto
+
+*.c text
+*.h text
+*.cpp text
+*.hpp text
+*.cs text
+*.java text
+*.js text
+*.jsx text
+*.ts text
+*.tsx text
+*.css text
+*.html text
+*.md text
+*.scss text
+*.xml text
+*.json text
+
+*.bat text eol=crlf
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
