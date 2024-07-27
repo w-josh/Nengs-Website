@@ -8,10 +8,11 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "mysql2": "^3.10.3"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }

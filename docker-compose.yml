@@ -1,0 +1,16 @@
+services:
+  db:
+    image: mysql:latest #use latest version
+    restart: always #always restart if the container stops
+    environment: 
+      MYSQL_ROOT_PASSWORD: LittleNeng
+      MYSQL_DATABASE: lashdb
+      MYSQL_USER: lashviewer
+      MYSQL_PASSWORD: lashes  
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql #map database storage/volume in container
+
+volumes:
+  db_data: #data storage volume

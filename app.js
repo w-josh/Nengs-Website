@@ -9,7 +9,7 @@ const database = mysql.createConnection({
     user: "lashviewer",
     password:"lashes",
     database: "lashdb",
-    port: 3302
+    port: 3306
 });
 
 database.connect((err) => {
@@ -17,12 +17,11 @@ database.connect((err) => {
         console.error("Error connecting to database: ", err);
         return;
     }
-    console.log("connected to database")
-})
+    console.log("connected to database");
+});
 
 
-
-
+app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 app.get("/", (request, response) => {
